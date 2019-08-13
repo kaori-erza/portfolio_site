@@ -328,19 +328,19 @@ a{
 
 .profile_box1 li{
     list-style:none;
-    font-size:25px; 
+    font-size:18px; 
 }
 
 .profile_box2{
     position: absolute;
     padding:0;
     right: 0;
-    bottom: 100px;
+    bottom: 150px;
 }
 
 .profile_box2 li{
     list-style:none;
-    font-size:25px;
+    font-size:18px;
 }
 
 .space2{

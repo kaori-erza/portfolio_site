@@ -156,7 +156,7 @@ a{
 
 .nagomi_date li{
     list-style:none;
-    font-size: 36px;
+    font-size: 30px;
 }
 
 .nagomi_main{
@@ -173,7 +173,7 @@ a{
 }
 
 .main_text{
-    font-size: 30px;
+    font-size: 24px;
     font-family: "irohakakuC-Medium.ttf";
     transition: 4s ease;
 }
@@ -188,7 +188,7 @@ a{
 }
 
 .color_box h3{
-    font-size: 39px;
+    font-size: 30px;
 }
 
 .red_box{
@@ -229,7 +229,7 @@ a{
 }
 
 .main_color p{
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .main_font{
@@ -237,7 +237,7 @@ a{
 }
 
 .main_font h3{
-    font-size: 39px;
+    font-size: 30px;
 }
 
 .font_box{
@@ -246,7 +246,7 @@ a{
 }
 
 .font_box p{
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .nagomi_photo{

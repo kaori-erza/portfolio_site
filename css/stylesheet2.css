@@ -152,10 +152,34 @@ a{
     padding: 0;
     list-style:none;
     font-family: 'Futura.ttc' ;
+    color: black;
 }
 
-.work_contents li{
+.contents_item{
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-bottom: 20px;
+    text-decoration:none;
+}
+
+.contents_item a:visited { color: black; }
+
+.contents_item a:before{
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -2px;
+	width: 100%;
+	height: 3px;
+	background: black;
+	transform: scale(0, 1);
+	transform-origin: left;
+	transition: 0.4s;
+}
+
+.contents_item a:hover:before {
+	transform: scale(1);
 }
 
 .border_box{

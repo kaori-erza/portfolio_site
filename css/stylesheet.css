@@ -119,3 +119,36 @@ a:hover:before {
 	transform: scale(1);
 }
 
+.wave1:before,
+.wave1:after{
+    content: '';
+    position: fixed;
+    width: 130%;
+    height: 250%;
+    transform: translate(-13%,18%);
+    background: #ffc487;
+    z-index: -200;
+}
+
+.wave1:before{
+    background: #ffc487;
+    animation: rotation 5s linear infinite;
+    border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
+}
+.wave1:after{
+    background: #ffc487;
+    opacity: 0.5;
+    animation: rotation 5s linear infinite;
+    border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
+}
+
+@keyframes rotation{
+    0%{
+        transform: translate(-13%,18%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-13%,18%) rotate(180deg);
+    }
+}
+
+

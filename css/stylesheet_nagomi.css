@@ -125,8 +125,9 @@ a{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    background-color:white;
+    background: rgba(255, 255, 255, 0.8);
     border: #B0E7E7 5px solid;
+    z-index: -100;
 }
 
 .main_works{
@@ -276,4 +277,36 @@ a{
     margin-top: 50px;
     margin-bottom: 100px;
     transition: 4s ease;
+}
+
+.wave1:before,
+.wave1:after{
+    content: '';
+    position: fixed;
+    width: 140%;
+    height: 250%;
+    transform: translate(-20%,15%);
+    background: #ffc487;
+    z-index: -200;
+}
+
+.wave1:before{
+    background: #ffc487;
+    animation: rotation 5s linear infinite;
+    border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
+}
+.wave1:after{
+    background: #ffc487;
+    opacity: 0.5;
+    animation: rotation 5s linear infinite;
+    border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
+}
+
+@keyframes rotation{
+    0%{
+        transform: translate(-20%,15%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-20%,15%) rotate(180deg);
+    }
 }

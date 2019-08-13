@@ -11,18 +11,18 @@
     --bk:#FFD6DE;
     --main-color:#FFA59C;
     --sub-color:#B0E7E7;
-}
-
-h1{
-    margin: 0;
+    --circle:#5c5151;
+    --ai-color:#ffab09;
+    --ps-color:#88cfff;
+    --html-color:#97fcbe;
 }
 
 body{
     background-color:var(--bk);
     position: relative;
-    margin:0 auto; /* 画面の余白をなくす */
-    width:100vw; /* 画面サイズが100%*/
-    height:100vh;
+    margin:0 auto; 
+    width:100vw; 
+    z-index: -999;
 }
 
 .topBar{
@@ -38,11 +38,11 @@ body{
 .name{
     position: relative;
     font-size: 37px;
-    font-family: 'Futura.ttc' ;
+    font-family: "Futura.ttc";
     color: black;
 }
 
-.name:visited { color: black; } 
+.name:visited { color: black; }
 
 .name:before{
 	content: "";
@@ -82,7 +82,7 @@ body{
 .subBar_item{
     margin: 0 100px;
     position: relative;
-    color:white;
+    color: white;
 }
 
 a{
@@ -124,8 +124,9 @@ a{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    background-color:white;
+    background: rgba(255, 255, 255, 0.8);
     border: #B0E7E7 5px solid;
+    z-index: -100;
 }
 
 .main_works{
@@ -294,3 +295,36 @@ a{
     margin-right: 30px;
     border-top: #B0E7E7 5px solid;
 }
+
+.wave1:before,
+.wave1:after{
+    content: '';
+    position: fixed;
+    width: 140%;
+    height: 250%;
+    transform: translate(-20%,15%);
+    background: #ffc487;
+    z-index: -200;
+}
+
+.wave1:before{
+    background: #ffc487;
+    animation: rotation 5s linear infinite;
+    border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
+}
+.wave1:after{
+    background: #ffc487;
+    opacity: 0.5;
+    animation: rotation 5s linear infinite;
+    border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
+}
+
+@keyframes rotation{
+    0%{
+        transform: translate(-20%,15%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-20%,15%) rotate(180deg);
+    }
+}
+

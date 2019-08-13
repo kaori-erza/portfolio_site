@@ -26,7 +26,20 @@ section{
 }
 .main_photo{
     height:80vh;
+    opacity: 0;
+    animation-name:fade_main_photo;
+    animation-duration:3s; 
+    animation-timing-function: ease; 
+    animation-iteration-count:1; 
+    animation-fill-mode: forwards;
 }
+
+@keyframes fade_main_photo {
+    0% {opacity: 0; transform: translate3d(-1400px,0,0);}
+    100% {opacity: 1; transform: translate3d(0,0,0);}
+  }
+
+
 .name{
     position: absolute;
     width:30%;
@@ -37,8 +50,21 @@ section{
     border:2px solid var(--main-color);
     padding: 42px;
     background-color: white;
-    
+
+    opacity: 0;
+    animation-name:fade_name;
+    animation-duration:3s; 
+    animation-timing-function: ease; 
+    animation-iteration-count:1; 
+    animation-fill-mode: forwards; 
 }
+
+@keyframes fade_name {
+    0% {opacity: 0; transform: translate3d(800px,0,0);}
+    100% {opacity: 1; transform: translate3d(0,0,0);}
+}
+
+
 .mainBar{
     height:10%;
 }
@@ -48,6 +74,17 @@ section{
     display: flex;
     justify-content: center;
     padding:20px 80px 0px 80px;
+    opacity: 0;
+    animation-name:fade_bar;
+    animation-duration:3s; 
+    animation-timing-function: ease; 
+    animation-iteration-count:1; 
+    animation-fill-mode: forwards; 
+}
+
+@keyframes fade_bar {
+    0% {opacity: 0; transform: translate3d(0,200px,0);}
+    100% {opacity: 1; transform: translate3d(0,0,0);}
 }
 
 li{
@@ -81,3 +118,4 @@ a:before{
 a:hover:before {
 	transform: scale(1);
 }
+

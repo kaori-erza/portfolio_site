@@ -1,34 +1,5 @@
 $(function(){
 
-var barAI = new ProgressBar.Circle('#ai_container', {
-    strokeWidth: 6,
-    easing: 'easeInOut',
-    duration: 1400,
-    color: '#ffab09',
-    
-});
-
-var barPS = new ProgressBar.Circle('#ps_container', {
-    strokeWidth: 6,
-    easing: 'easeInOut',
-    duration: 1400,
-    color: '#88cfff',
-    
-});
-
-var barHTML = new ProgressBar.Circle('#html_container', {
-    strokeWidth: 6,
-    easing: 'easeInOut',
-    duration: 1400,
-    color: '#97fcbe',
-    
-});
-
-// barAI.animate(0.9);
-// barPS.animate(0.5);
-// barHTML.animate(0.2);   // Number from 0.0 to 1.0
-
-
 // $topBtnにback-to-topボタンのjQueryオブジェクトを代入
 var topBtn = $('#page_up');
 

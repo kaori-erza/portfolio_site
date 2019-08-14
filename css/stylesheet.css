@@ -39,6 +39,21 @@ section{
     100% {opacity: 1; transform: translate3d(0,0,0);}
   }
 
+.main_photo{
+    height:80vh;
+    margin-left: 30px;
+    margin-right: 15px;
+    /* transform: scale(1.1); */
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition-duration: 0.5s;
+    line-height: 30px;
+}
+.main_photo:hover{
+    filter: grayscale(0);
+    transition-duration: 0.5s;
+}
+
 
 .name{
     position: absolute;

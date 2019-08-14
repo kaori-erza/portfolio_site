@@ -166,28 +166,28 @@ a{
     font-family: 'Futura.ttc' ;
 }
 
-.no_main_photo{
+.nov_main_photo{
     width: 1264px;
     height: 947px;
     transition: 4s ease;
 }
 
-.main_text{
+.nov_main_text{
     font-size: 24px;
     font-family: "irohakakuC-Medium.ttf";
     transition: 4s ease;
 }
 
-.color_box{
+.nov_color_box{
     transition: 4s ease;
 }
 
-.main_color{
+.nov_main_color{
     display: flex;
     justify-content: space-around;
 }
 
-.color_box h3{
+.nov_color_box h3{
     font-size: 30px;
 }
 
@@ -228,15 +228,15 @@ a{
     margin-right: 40px;
 }
 
-.main_color p{
+.nov_main_color p{
     font-size: 24px;
 }
 
-.main_font{
+.nov_main_font{
     transition: 4s ease;
 }
 
-.main_font h3{
+.nov_main_font h3{
     font-size: 30px;
 }
 
@@ -255,7 +255,7 @@ a{
     align-items: center;
 }
 
-.no_photo1{
+.nov_photo1{
     width: 1106px;
     height: 829px;
     margin-top: 100px;
@@ -263,7 +263,7 @@ a{
     transition: 4s ease;
 }
 
-.no_photo2{
+.nov_photo2{
     width: 1106px;
     height: 829px;
     margin-top: 100px;
@@ -271,7 +271,7 @@ a{
     transition: 4s ease;
 }
 
-.no_photo3{
+.nov_photo3{
     width: 1106px;
     height: 829px;
     margin-top: 50px;

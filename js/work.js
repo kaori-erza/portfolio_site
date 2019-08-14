@@ -171,13 +171,13 @@ $(window).scroll(function (){
     
 });
 
-$(".no_main_photo").css("opacity","0");
-$(".main_text").css("opacity","0" );
-$(".color_box").css("opacity","0" );
-$(".main_font").css("opacity","0" );
-$(".no_photo1").css("opacity","0" );
-$(".no_photo2").css("opacity","0" );
-$(".no_photo3").css("opacity","0" );
+$(".nov_main_photo").css("opacity","0");
+$(".nov_main_text").css("opacity","0" );
+$(".nov_color_box").css("opacity","0" );
+$(".nov_main_font").css("opacity","0" );
+$(".nov_photo1").css("opacity","0" );
+$(".nov_photo2").css("opacity","0" );
+$(".nov_photo3").css("opacity","0" );
 
 $(window).scroll(function (){
     $(".noveler_main").each(function(){
@@ -185,45 +185,45 @@ $(window).scroll(function (){
     var scroll = $(window).scrollTop();
     var windowHeight = $(window).height();
     if (scroll >  imgPos - windowHeight + 2*windowHeight/3){
-        $(".no_main_photo",this).css("opacity","1" );
+        $(".nov_main_photo",this).css("opacity","1" );
     } else {
-        $(".no_main_photo",this).css("opacity","0" );
+        $(".nov_main_photo",this).css("opacity","0" );
     }
 
     if (scroll >  imgPos - windowHeight + 3*windowHeight/3){
-        $(".main_text",this).css("opacity","1" );
+        $(".nov_main_text",this).css("opacity","1" );
     } else {
-        $(".main_text",this).css("opacity","0" );
+        $(".nov_main_text",this).css("opacity","0" );
     }
 
     if (scroll >  imgPos - windowHeight + 4*windowHeight/3){
-        $(".color_box",this).css("opacity","1" );
+        $(".nov_color_box",this).css("opacity","1" );
     } else {
-        $(".color_box",this).css("opacity","0" );
+        $(".nov_color_box",this).css("opacity","0" );
     }
 
     if (scroll >  imgPos - windowHeight + 5*windowHeight/3){
-        $(".main_font",this).css("opacity","1" );
+        $(".nov_main_font",this).css("opacity","1" );
     } else {
-        $(".main_font",this).css("opacity","0" );
+        $(".nov_main_font",this).css("opacity","0" );
     }
 
     if (scroll >  imgPos - windowHeight + 6*windowHeight/3){
-        $(".no_photo1",this).css("opacity","1" );
+        $(".nov_photo1",this).css("opacity","1" );
     } else {
-        $(".no_photo1",this).css("opacity","0" );
+        $(".nov_photo1",this).css("opacity","0" );
     }
 
     if (scroll >  imgPos - windowHeight + 9*windowHeight/3){
-        $(".no_photo2",this).css("opacity","1" );
+        $(".nov_photo2",this).css("opacity","1" );
     } else {
-        $(".no_photo2",this).css("opacity","0" );
+        $(".nov_photo2",this).css("opacity","0" );
     }
 
     if (scroll >  imgPos - windowHeight + 12*windowHeight/3){
-        $(".no_photo3",this).css("opacity","1" );
+        $(".nov_photo3",this).css("opacity","1" );
     } else {
-        $(".no_photo3",this).css("opacity","0" );
+        $(".nov_photo3",this).css("opacity","0" );
     }
     
     });

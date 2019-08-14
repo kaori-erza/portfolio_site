@@ -197,12 +197,23 @@ a{
 .work_box img{
     width: 342px;
     height: 256px;
+    margin-left: 30px;
+    margin-right: 15px;
+    /* transform: scale(1.1); */
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition-duration: 0.5s;
+    line-height: 30px;
+}
+.work_box img:hover{
+    filter: grayscale(0);
+    transition-duration: 0.5s;
 }
 
 .graphic_box{
     width:80%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
     margin-top: 80px;
@@ -215,17 +226,20 @@ a{
 .graphic1_box{
     display: flex;
     flex-direction: column;
+    width: 342px;
+    justify-content: center;
     align-items: center;
 }
 
-.graphic1_box a{
+.graphic1_box div{
     position: relative;
+    padding-top: 10px;
     color: black;
 }
 
-.graphic1_box a:visited { color: black; } 
+.graphic1_box div:visited { color: black; } 
 
-.graphic1_box a:before{
+.graphic1_box div:before{
 	content: "";
 	position: absolute;
 	left: 0;
@@ -238,24 +252,27 @@ a{
 	transition: 0.4s;
 }
 
-.graphic1_box a:hover:before {
+.graphic1_box div:hover:before {
 	transform: scale(1);
 }
 
 .graphic2_box{
     display: flex;
     flex-direction: column;
+    width: 342px;
+    justify-content: center;
     align-items: center;
 }
 
-.graphic2_box a{
+.graphic2_box div{
     position: relative;
+    padding-top: 10px;
     color: black;
 }
 
-.graphic2_box a:visited { color: black; } 
+.graphic2_box div:visited { color: black; } 
 
-.graphic2_box a:before{
+.graphic2_box div:before{
 	content: "";
 	position: absolute;
 	left: 0;
@@ -268,35 +285,71 @@ a{
 	transition: 0.4s;
 }
 
-.graphic2_box:hover:before {
+.graphic2_box div:hover:before {
+	transform: scale(1);
+}
+
+.graphic3_box{
+    display: flex;
+    flex-direction: column;
+    width: 342px;
+    justify-content: center;
+    align-items: center;
+}
+
+.graphic3_box div{
+    position: relative;
+    padding-top: 10px;
+    color: black;
+}
+
+.graphic3_box div:visited { color: black; } 
+
+.graphic3_box div:before{
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -2px;
+	width: 100%;
+	height: 3px;
+	background: black;
+	transform: scale(0, 1);
+	transform-origin: left;
+	transition: 0.4s;
+}
+
+.graphic3_box div:hover:before {
 	transform: scale(1);
 }
 
 .editorial_box{
-    width: 80%;
+    width:80%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
     margin-bottom: 40px;
+    padding-bottom: 70px;
     transition: 2s ease;
 }
 
 .editorial1_box{
     display: flex;
     flex-direction: column;
+    width: 342px;
+    justify-content: center;
     align-items: center;
 }
 
-.editorial1_box a{
+.editorial1_box div{
     position: relative;
+    padding-top: 10px;
     color: black;
 }
 
-.editorial1_box a:visited { color: black; } 
+.editorial1_box div:visited { color: black; } 
 
-.editorial1_box a:before{
+.editorial1_box div:before{
 	content: "";
 	position: absolute;
 	left: 0;
@@ -309,7 +362,51 @@ a{
 	transition: 0.4s;
 }
 
-.editorial1_box a:hover:before {
+.editorial1_box div:hover:before {
+	transform: scale(1);
+}
+
+.web_box{
+    width:80%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    padding-bottom: 70px;
+    transition: 2s ease;
+}
+
+.web1_box{
+    display: flex;
+    flex-direction: column;
+    width: 342px;
+    justify-content: center;
+    align-items: center;
+}
+
+.web1_box div{
+    position: relative;
+    padding-top: 10px;
+    color: black;
+}
+
+.web1_box div:visited { color: black; } 
+
+.web1_box div:before{
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -2px;
+	width: 100%;
+	height: 3px;
+	background: black;
+	transform: scale(0, 1);
+	transform-origin: left;
+	transition: 0.4s;
+}
+
+.web1_box div:hover:before {
 	transform: scale(1);
 }
 

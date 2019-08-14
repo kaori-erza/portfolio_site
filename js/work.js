@@ -196,19 +196,19 @@ $(window).scroll(function (){
         $(".nov_main_text",this).css("opacity","0" );
     }
 
-    if (scroll >  imgPos - windowHeight + 4*windowHeight/3){
+    if (scroll >  imgPos - windowHeight + 5*windowHeight/3){
         $(".nov_color_box",this).css("opacity","1" );
     } else {
         $(".nov_color_box",this).css("opacity","0" );
     }
 
-    if (scroll >  imgPos - windowHeight + 5*windowHeight/3){
+    if (scroll >  imgPos - windowHeight + 6*windowHeight/3){
         $(".nov_main_font",this).css("opacity","1" );
     } else {
         $(".nov_main_font",this).css("opacity","0" );
     }
 
-    if (scroll >  imgPos - windowHeight + 6*windowHeight/3){
+    if (scroll >  imgPos - windowHeight + 7*windowHeight/3){
         $(".nov_photo1",this).css("opacity","1" );
     } else {
         $(".nov_photo1",this).css("opacity","0" );
